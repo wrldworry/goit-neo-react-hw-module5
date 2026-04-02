@@ -1,0 +1,61 @@
+.SearchForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	margin: 0 auto;
+	background: linear-gradient(135deg, #646cff, #4f46e5);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 16px 0;
+}
+
+.SearchFormInputContainer {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 0;
+	padding: 0;
+}
+
+.SearchFormInput {
+	outline: none;
+	width: 100%;
+	padding: 8px 40px 8px 8px; 
+	border: 1px solid rgb(92, 92, 92);
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.SearchFormButton {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0; 
+	padding: 0;
+	background: none;
+	cursor: pointer;
+	border: none;
+	font-size: 18px;
+	color: #646cff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SearchForm input:active,
+.SearchForm input:focus {
+	border-color: #646cff;
+}
+
+@media (max-width: 768px) {
+	.SearchFormInput {
+		font-size: 14px;
+	}
+
+	.SearchFormButton {
+		font-size: 16px;
+	}
+}

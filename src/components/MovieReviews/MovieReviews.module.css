@@ -1,0 +1,70 @@
+.reviewsList {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 0;
+	list-style: none;
+}
+
+.reviewItem {
+	padding: 24px;
+	border-radius: 12px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.reviewItem:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.reviewTitle {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 8px;
+	color: #333;
+	text-align: left;
+}
+
+.reviewText {
+	font-size: 0.95rem;
+	line-height: 1.5;
+	color: #555;
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.reviewItem {
+		padding: 20px;
+	}
+
+	.reviewTitle {
+		font-size: 1rem;
+	}
+
+	.reviewText {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.reviewItem {
+		padding: 16px;
+	}
+
+	.reviewTitle {
+		font-size: 0.95rem;
+	}
+
+	.reviewText {
+		font-size: 0.85rem;
+	}
+
+	.reviewItem:hover {
+		transform: none;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+}
